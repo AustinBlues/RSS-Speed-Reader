@@ -45,9 +45,9 @@ module RssSpeedReader
 	  base << '/' unless base[-1] == ?/
 	when 'feed/link'
 	  if reader['rel'] == 'alternate' && reader['type'] == 'text/html'
-	    website_url = reader['href'].strip unless reader['href'].empty?
+	    website_url = reader['href'].strip if !reader['href'].nil? && !reader['href'].empty?
 	  elsif reader['type'] !~ /xml/ && reader['rel'] != 'replies'
-	    website_url = reader['href'] if website_url.empty?
+	    website_url = reader['href'] if website_url.nil?
 	  end
 	when 'feed/entry', 'feed/atom:entry', 'feed/atom03:entry', 'feed/atom10:entry',
 	    'feed/entry', 'feed/atom10:entry', 'feed/atom03:entry', 'feed/atom:entry',
@@ -74,7 +74,7 @@ module RssSpeedReader
 	when 'rss/link', 'rss/channel/link', 'rdf:RDF/channel/link'
 	  base = website_url = reader.value.strip
 	when 'feed/id'
-	  website_url = reader.value.strip if website_url.empty?
+	  website_url = reader.value.strip if website_url.nil? || website_url.empty?
 	when 'redirect/newLocation'
 	  rss_url = reader.value.strip
 	  raise RssSpeedReader::NewLocation, rss_url
