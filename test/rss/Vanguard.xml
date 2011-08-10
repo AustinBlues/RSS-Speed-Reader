@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- To add this Vanguard RSS news feed to your news reader, simply copy the URL for this page from the address bar above and paste it into the subscription field in your news reader. -->
+<rss version="2.0">
+<channel>
+<link>http://personal.vanguard.com/us/content/Home/Digital/RSSLandingContent.jsp</link>
+<title>Vanguard: All news articles</title>
+<description>This feed offers nearly every article published on the Personal Investors area of Vanguard.com(R), including mutual fund updates, guidance on investing and personal finance, commentary from Vanguard leaders, and our weekly economic news roundup. You&#8217;ll find a wealth of valuable, timely information on topics such as retirement, college saving, financial planning, and the forces that drive the markets and the economy at large.</description>
+<pubDate>Fri, 12 Jun 2009 17:05:24 EDT</pubDate>
+<copyright>The Vanguard Group</copyright>
+<ttl>60</ttl>
+<image>
+<link>http://personal.vanguard.com/us/CorporatePortal</link>
+<title>The Vanguard Group</title>
+<url>http://personal.vanguard.com/web/images/VanSig_RSS.gif</url>
+<height></height>
+<width></width>
+</image>
+<item>
+<link>https://personal.vanguard.com/VGApp/hnw/VanguardViewsArticle?ArticleJSP=/freshness/News_and_Views/news_ALL_econ_06122009_ALL.jsp&amp;SYND=RSS&amp;Channel=AN</link>
+<title>Economic Week in Review: Positive news offers hopeful signs</title>
+<description>A summary of the major economic reports and a recap of the securities markets for the week.</description>
+<pubDate>Fri, 12 Jun 2009 17:04:06 EDT</pubDate>
+</item>
+<item>
+<link>https://personal.vanguard.com/VGApp/hnw/VanguardViewsArticle?ArticleJSP=/freshness/News_and_Views/news_ALL_junedividends_06122009_ALL.jsp&amp;SYND=RSS&amp;Channel=AN</link>
+<title>Find out if your fund is declaring a dividend in June</title>
+<description>Many Vanguard&amp;#174; mutual funds and ETFs will distribute quarterly income dividends in June 2009.</description>
+<pubDate>Fri, 12 Jun 2009 10:26:07 EDT</pubDate>
+</item>
+</channel>
+</rss>

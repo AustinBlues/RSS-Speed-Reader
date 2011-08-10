@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds2.feedburner.com/~d/styles/itemcontent.css"?><rss version="2.0">
+<channel>
+<title>Morningstar Stock Analyst Notes</title>
+<link>http://www.morningstar.com/?pgid=rss</link>
+<description>Find fresh, independent perspectives on top investing stories and comprehensive information on stocks, mutual funds and ETFs.</description>
+<language>en-us</language>
+<copyright>Copyright 2009 Morningstar, Inc.</copyright>
+<image>
+<title>Morningstar.com</title>
+<link>http://www.morningstar.com/?pgid=rss</link>
+<url>http://im.morningstar.com/im/HP_Mlogo_144.jpg</url>
+<width>144</width>
+<height>48</height>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds2.feedburner.com/morningstar/BMYH" type="application/rss+xml" /><item>
+<title>AerCap Secures Funding</title>
+<link>http://quicktake.morningstar.com/StockNet/san.aspx?id=285123&amp;pgid=rss</link>
+<description />
+<pubDate>Wed, 25Mar200917:46:00 CST
+</pubDate>
+</item>
+<item>
+<title>Aircastle Cuts Dividend</title>
+<link>http://quicktake.morningstar.com/StockNet/san.aspx?id=285136&amp;pgid=rss</link>
+<description />
+<pubDate>Wed, 25Mar200917:43:00 CST
+</pubDate>
+</item>
+</channel>
+</rss>

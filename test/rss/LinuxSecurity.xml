@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>LinuxSecurity.com - Latest News</title>
+    <link>http://www.linuxsecurity.com/</link>
+    <description>The central voice for Linux and Open Source security news.</description>
+    <language>en-us</language>
+    <generator>update-rss-feeds.pl (1.01)</generator>
+
+  <item>
+    <title> How to steal corporate secrets in 20 minutes: Ask </title>
+    <link>http://www.linuxsecurity.com/content/view/152943?rdf</link>
+    <pubDate>Mon, 02 Aug 2010 10:29:22 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: A few companies in the Fortune 500 need to upgrade their Web browsers. And while they're at it, a little in-house training on social engineering wouldn't be a bad idea, either.</description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152943?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>Network World</source>
+  </item>
+
+  <item>
+    <title> GSM Phone Hack FAQ: What You Should Know </title>
+    <link>http://www.linuxsecurity.com/content/view/152942?rdf</link>
+    <pubDate>Mon, 02 Aug 2010 10:28:05 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: A researcher at the Def Con security conference in Las Vegas demonstrated that he could impersonate a GSM cell tower and intercept mobile phone calls using only $1500 worth of equipment. The cost-effective solution brings mobile phone snooping to the masses, and raises some concerns for mobile phone security. </description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152942?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>Network World</source>
+  </item>
+
+  <item>
+    <title> AppArmor set for inclusion in Linux kernel </title>
+    <link>http://www.linuxsecurity.com/content/view/152941?rdf</link>
+    <pubDate>Mon, 02 Aug 2010 10:22:25 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: James Morris, the maintainer of the Linux kernel's security subsystem, has integrated the kernel code for the AppArmor security extension into his development branch, which forms part of Linux-Next. Shortly afterwards, he announced  that he also intends to send the code to Linus Torvalds for integration into the Linux 2.6.36 kernel. </description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152941?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>H Security</source>
+  </item>
+
+  <item>
+    <title>US Secret Service shows business how to fight cyberthreats</title>
+    <link>http://www.linuxsecurity.com/content/view/152940?rdf</link>
+    <pubDate>Mon, 02 Aug 2010 10:10:04 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: Both types of attack have increased in the past year, according to the 2010 Verizon Data Breach Investigations report in partnership with the US Secret Service.  This is the first time private and commercial data has been combined in a data breach report, said Matthijs Van der Wel, head of the EMEA forensics team at Verizon Business.</description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152940?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>Infosecurity Magazine UK</source>
+  </item>
+
+  <item>
+    <title>GSM Hacking Coming To The Masses Script Kiddy Style</title>
+    <link>http://www.linuxsecurity.com/content/view/152939?rdf</link>
+    <pubDate>Mon, 02 Aug 2010 10:08:12 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: Well it looks like what happened to WEP  all those years ago is going to happen to GSM now. The methods have been known, the theory is established but the breaking point is when freely available tools are published that makes it possible for anyone to perform the attacks even without really understanding what is going on.</description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152939?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>Darknet UK</source>
+  </item>
+
+  <item>
+    <title>Important Lessons to Learn from the Black Hat ATM Hack</title>
+    <link>http://www.linuxsecurity.com/content/view/152923?rdf</link>
+    <pubDate>Fri, 30 Jul 2010 12:40:34 +0000</pubDate>
+    <description>&#60;b&#62;LinuxSecurity.com&#60;/b&#62;: A security researcher named Barnaby Jack amazed attendees at the Black Hat security conference by hacking ATM machines  in a session titled "Jackpotting Automated Teller Machines Redux". There are some important lessons to be learned from the hacks Jack demonstrated, and they apply to more than just ATM machines.</description>
+    <guid isPermaLink='true'>http://www.linuxsecurity.com/content/view/152923?rdf</guid>
+    <source url='http://www.linuxsecurity.com'>PC World</source>
+  </item>
+
+  </channel>
+</rss>

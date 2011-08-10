@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Linux Magazine Full Feed</title><link>http://www.linux-magazine.com</link>
+    <description>Linux Magazine Full Feed</description>
+    <language>en-US</language>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 18:37:07 GMT</pubDate>
+      <title></title><link>http://www.linux-magazine.com/issues/2009/102/tech_tools</link>
+      <description></description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:48:07 GMT</pubDate>
+      <title>In Honor of Ada</title><link>http://www.linux-magazine.com/online/blogs/rose_blog_rikki_s_open_source_exchange/in_honor_of_ada</link>
+      <description>Just a few of the many women I admire</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:38:05 GMT</pubDate>
+      <title>SUSE Linux Enterprise 11 Arrives</title><link>http://www.linux-magazine.com/online/news/suse_linux_enterprise_11_arrives</link>
+      <description>
+&lt;p&gt;
+Novell announced today that SUSE Linux Enterprise Server (SLES) is officially out in version 11. The SLES extensions for Mono and the desktop version SLED 11 should also concurrently hit the market. A high-availability extension is to follow.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:29:14 GMT</pubDate>
+      <title>An up-to-date look at free software and its makers</title><link>http://www.linux-magazine.com/issues/2008/89/projects_on_the_move</link>
+      <description>
+&lt;p&gt;
+Accessing visible files in an “Open” dialog is a thing of the past now that application launchers like Gnome Do help you launch the right program. We’ll also check in with Wikia Search.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:14:11 GMT</pubDate>
+      <title>OpenOffice.org Base tips and tricks</title><link>http://www.linux-magazine.com/issues/2008/89/report_builder</link>
+      <description>
+&lt;p&gt;
+Learn how to use advanced OpenOffice.org Base tools by building a database solution. Our sample invoicing application also helps demonstrate the reporting capabilities of the Sun Report Builder extension.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:09:39 GMT</pubDate>
+      <title>Searching logfiles with tail, grep, and company </title><link>http://www.linux-magazine.com/issues/2008/89/dive_deep</link>
+      <description>
+&lt;p&gt;
+If your hardware or software goes on strike, or the graphical system or your Internet connection fail, checking the logfiles can often be a big help. In this month’s column, we will look at the command-line tools that can help you scour the depths of these critical files.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 17:03:41 GMT</pubDate>
+      <title>Easy graphic masking and extraction with SIOX</title><link>http://www.linux-magazine.com/issues/2008/89/easy_mask</link>
+      <description>
+&lt;p&gt;
+SIOX easily masks and extracts any area from a pixel graphic. We&apos;ll show you how to improve your pictures with this powerful plugin.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 16:58:59 GMT</pubDate>
+      <title>Refreshing netstat output with Perl</title><link>http://www.linux-magazine.com/issues/2008/89/network_view</link>
+      <description>
+&lt;p&gt;
+The netstat utility reveals how your Linux box interacts with the local network. With a few Perl modules, you can develop a tool that displays the data dynamically, exactly the way top does.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 16:52:24 GMT</pubDate>
+      <title>Backing up hard disk partitions over the network</title><link>http://www.linux-magazine.com/issues/2008/89/snapshot</link>
+      <description>
+&lt;p&gt;
+A partition backup offers several advantages over legacy, file-based backup alternatives, and using a backup server adds even more convenience. We’ll show you some free tools for partition backup over the network.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 16:39:54 GMT</pubDate>
+      <title>De-perimeterization and life after the firewall</title><link>http://www.linux-magazine.com/issues/2008/89/no_borders</link>
+      <description>
+&lt;p&gt;
+Enterprises and organizations used to feel protected behind the firewall, but now VPNs, e-commerce, web services, and Web 2.0 have put an end to the comfort. The network perimeter is losing its significance, and the time has come for a new approach to security.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 16:32:39 GMT</pubDate>
+      <title>The sys admin’s daily grind: PWGen</title><link>http://www.linux-magazine.com/issues/2008/89/cryptic_coder</link>
+      <description>
+&lt;p&gt;
+Easy to remember but still safe – this is the classic conflict when it comes to choosing a password. The PWGen tool offers a sensible compromise.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 16:06:51 GMT</pubDate>
+      <title>Buy Oracle Stock? What of Their Red Hat Takeover?</title><link>http://www.linux-magazine.com/online/news/buy_oracle_stock_what_of_their_red_hat_takeover</link>
+      <description>
+&lt;p&gt;
+Rumors of a Red Hat takeover have been circulating since time immemorial. Maybe this time there&apos;s some truth to it.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 15:09:01 GMT</pubDate>
+      <title>College Degree Required?</title><link>http://www.linux-magazine.com/online/blogs/rose_blog_rikki_s_open_source_exchange/college_degree_required</link>
+      <description>Esther Schindler asks, &quot;Do You REALLY Need a College Degree to Get a Programming Job?&quot;</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 14:59:44 GMT</pubDate>
+      <title>Kernel 2.6.29 Arrives: Btrfs, Fastboot, WiMAX and Mode Setting</title><link>http://www.linux-magazine.com/online/news/kernel_2_6_29_arrives_btrfs_fastboot_wimax_and_mode_setting</link>
+      <description>
+&lt;p&gt;
+Kernel 2.6.29 has arrived and brings with it a string of new features. We&apos;re presenting some of them and describe what to make of them.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 12:46:31 GMT</pubDate>
+      <title>TomTom Fires Back in Microsoft Patent War</title><link>http://www.linux-magazine.com/online/news/tomtom_fires_back_in_microsoft_patent_war</link>
+      <description>
+&lt;p&gt;
+Navigation software maker TomTom is now beating its drums against Microsoft for patent rights and has aligned with the Open Invention Network.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Tue, 24 Mar 2009 12:41:22 GMT</pubDate>
+      <title>Linux on the Catwalk</title><link>http://www.linux-magazine.com/online/news/linux_on_the_catwalk</link>
+      <description>
+&lt;p&gt;
+The Japan Fashion Week in Tokyo this week will host the performance of a Linux-based robot that runs on the hard real time ART-Linux distro.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 21:57:06 GMT</pubDate>
+      <title>Google Summer of Code: Student applications now open</title><link>http://www.linux-magazine.com/online/news/google_summer_of_code_student_applications_now_open</link>
+      <description>
+&lt;p&gt;
+Last week, Google unveiled the &lt;a href=&quot;http://google-opensource.blogspot.com/2009/03/our-fifth-google-summer-of-code-meet.html&quot; target=&quot;_blank&quot;&gt;150 mentoring organizations&lt;/a&gt; selected for Google Summer of Code (GSoC) 2009, and students can begin &lt;a href=&quot;http://socghop.appspot.com/document/show/program/google/gsoc2009/timeline&quot; target=&quot;_blank&quot;&gt;submitting applications&lt;/a&gt; now. 
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 21:51:55 GMT</pubDate>
+      <title>Google Summer of Code: Student applications now open</title><link>http://www.linux-magazine.com/online/blogs/rose_blog_rikki_s_open_source_exchange/google_summer_of_code_student_applications_now_open</link>
+      <description>Deadlineto apply is April 3, 2009</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 18:29:07 GMT</pubDate>
+      <title>OpenArchive: Audit Compliant Archiving with Free Source Code</title><link>http://www.linux-magazine.com/online/news/openarchive_audit_compliant_archiving_with_free_source_code</link>
+      <description>
+&lt;p&gt;
+At a release party in Stuttgart, Germany, manufacturer Grau Data officially announced the release of its archiving software, ArchiveManager, as open source software.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 17:31:03 GMT</pubDate>
+      <title></title><link>http://www.linux-magazine.com/issues/2008/89/ask_klaus</link>
+      <description>
+&lt;p&gt;
+Klaus Knopper is the creator of Knoppix and co-founder of the LinuxTag expo. He currently works as a teacher, programmer, and consultant. If you have a configuration problem, or if you just want to learn more about how Linux works, send your questions to: klaus@linux-magazine. com
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 17:19:42 GMT</pubDate>
+      <title>Monitoring remote servers with IPMI</title><link>http://www.linux-magazine.com/issues/2008/89/the_watcher</link>
+      <description>
+&lt;p&gt;
+Intelligent Platform Management Interface, IPMI, lets you monitor the status of the remote server – even if the server isn’t running.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 17:13:00 GMT</pubDate>
+      <title>Building your own video server</title><link>http://www.linux-magazine.com/issues/2008/89/attic_tv</link>
+      <description>
+&lt;p&gt;
+We’ll show you how to build your own Linux-based video server that records, stores, and distributes TV programs.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 16:24:04 GMT</pubDate>
+      <title>Sun Provides Open APIs for Cloud Computing</title><link>http://www.linux-magazine.com/online/news/sun_provides_open_apis_for_cloud_computing</link>
+      <description>
+&lt;p&gt;
+As of this summer, Sun Microsystems will provide storage and computing resources for cloud computing. They intend to open up the APIs with a public review process.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 15:59:36 GMT</pubDate>
+      <title>Document Freedom Day - March 25th</title><link>http://www.linux-magazine.com/online/blogs/paw_prints_writings_of_the_maddog/document_freedom_day_march_25th</link>
+      <description>Document Freedom Day - Do you feel lucky?</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 15:09:06 GMT</pubDate>
+      <title>New World Order: More Depth, Better Graphics in Battle for Wesnoth 1.6</title><link>http://www.linux-magazine.com/online/news/new_world_order_more_depth_better_graphics_in_battle_for_wesnoth_1_6</link>
+      <description>
+&lt;p&gt;
+A Goblin Spearman can now be weak, slow or dim, but Wesnoth has seasons and Walking Corpses cost you more in the battle to reclaim the throne to the mythical land.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 14:36:05 GMT</pubDate>
+      <title>Creating Images with openSUSE Build Service 1.5</title><link>http://www.linux-magazine.com/online/news/creating_images_with_opensuse_build_service_1_5</link>
+      <description>
+&lt;p&gt;
+The newly released version 1.5 of the openSUSE Build Service (OBS) will enable developers to build not only software packages but entire distributions. 
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 14:13:04 GMT</pubDate>
+      <title> ApacheCon Europe 2009 -- Live Stream for Free</title><link>http://www.linux-magazine.com/online/news/apachecon_europe_2009_live_stream_for_free</link>
+      <description>
+&lt;p&gt;
+From March 25 to March 27 the official conference of the Apache Software Foundation (ASF), ApacheCon Europe 2009 will be held in Amsterdam, Netherlands. Some of the talks will be available here on Linux Magazine for free.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 13:25:29 GMT</pubDate>
+      <title>FotoInsight Designer 4.5</title><link>http://www.linux-magazine.com/online/news/fotoinsight_designer_4_5</link>
+      <description>
+&lt;p&gt;
+The newly released version 4.5 of the digital photo service is compatible with Linux and Mac operating systems and comes with geotagging and other new features.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 13:19:29 GMT</pubDate>
+      <title>Insecure Candidates: Chrome Wins Hacking Contest</title><link>http://www.linux-magazine.com/online/news/insecure_candidates_chrome_wins_hacking_contest</link>
+      <description>
+&lt;p&gt;
+At the CanSecWest Vancouver 2009 conference&apos;s PWN2OWN hacker&apos;s competition the Safari, Internet Explorer 8 and Firefox browsers were successfully hacked to run code on their systems. The Chrome browser was recognized as being the least impacted by the hackers.
+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <pubDate>Mon, 23 Mar 2009 12:23:23 GMT</pubDate>
+      <title>Back up OpenOffice.org Documents on Amazon S3</title><link>http://www.linux-magazine.com/online/blogs/productivity_sauce_dmitri_s_open_source_blend_of_productive_computing/back_up_openoffice_org_documents_on_amazon_s3</link>
+      <description>When it comes to cheap and secure off-site backup and storage, few services can beat Amazon S3. And if you want to easily back up your OpenOffice.org documents on Amazon S3, you can do so using a simple OpenOffice.org Basic macro and the aws Perl scripts</description>
+    </item>
+  </channel>
+</rss>

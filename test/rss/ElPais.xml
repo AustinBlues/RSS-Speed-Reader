@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"> 
+  <channel> 
+    <title><![CDATA[ELPAIS.com - Última Hora]]></title> 
+    <link><![CDATA[http://www.elpais.com/loultimo/]]></link> 
+    <description><![CDATA[ELPAIS.com - Última Hora]]></description>
+    <language>es-es</language> 
+    <copyright><![CDATA[Copyright PRISACOM S.A]]></copyright>
+    <ttl>15</ttl> 
+
+	<image>
+		<url>http://www.elpais.com/im/tit_logo.gif</url>
+		<title>ELPAIS.com - Última Hora</title>
+		<link>http://www.elpais.com</link>
+	</image>
+
+  <item>
+    <title><![CDATA[ERLICH]]></title>
+    <link><![CDATA[http://www.elpais.com/vineta/?d_date=20090407&autor=ERLICH&anchor=elpporopivin&xref=20090407elpepuvin_2&type=Tes&k=ERLICH]]></link>
+    <description><![CDATA[ ]]></description>
+    
+<enclosure url="http://www.elpais.com/elpaismedia/ultimahora/media/200904/07/opinion/vinetas/20090407elpepuvin_2_Ges_XCO.gif" length="6175" type="image/jpeg"/>
+
+    <guid isPermaLink="true"><![CDATA[http://www.elpais.com/vineta/?d_date=20090407&autor=ERLICH&anchor=elpporopivin&xref=20090407elpepuvin_2&type=Tes&k=ERLICH]]></guid>
+    <author><![CDATA[ERLICH]]></author>
+    <pubDate><![CDATA[Tue, 07 Apr 2009 01:35:00 +0200]]></pubDate>
+  </item>
+
+  <item>
+    <title><![CDATA[RAMÓN]]></title>
+    <link><![CDATA[http://www.elpais.com/vineta/?d_date=20090407&autor=&anchor=elpporopivin&xref=20090407elpepuvin_1&type=Tes&k=]]></link>
+    <description><![CDATA[ ]]></description>
+    
+<enclosure url="http://www.elpais.com/elpaismedia/ultimahora/media/200904/07/opinion/vinetas/20090407elpepuvin_1_Ges_XCO.gif" length="6804" type="image/jpeg"/>
+
+    <guid isPermaLink="true"><![CDATA[http://www.elpais.com/vineta/?d_date=20090407&autor=&anchor=elpporopivin&xref=20090407elpepuvin_1&type=Tes&k=]]></guid>
+    <author><![CDATA[]]></author>
+    <pubDate><![CDATA[Tue, 07 Apr 2009 01:08:00 +0200]]></pubDate>
+  </item>
+
+  </channel>
+</rss>
