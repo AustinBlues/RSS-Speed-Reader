@@ -14,11 +14,36 @@ module RssSpeedReader
   @@logger = nil
 
 
+  # Set logger to be used.
   def self.set_logger(logger)
     @@logger = logger
   end
 
 
+  # Parse RSS, reading XML from +io+, returning hash with all RSS
+  # feed relevant data.
+  def self.parse(reader)
+    status = ''
+    stack = []
+    begin
+      title, website_url, channel_base = RssSpeedReader.parse_header(reader, stack)
+      channel_base ||= website_url
+
+      stack.pop
+
+      libxmls = []
+
+      RssSpeedReader.parse_body(reader, stack, channel_base) do |libxml|
+	raise "MISSING POST TITLE!" unless libxml['title']
+	raise "MISSING POST URL!" unless libxml['url']
+	libxmls << libxml
+      end
+    end
+    {:title => title, :website_url => website_url, :items => libxmls}
+  end
+
+
+  # Parse up to the first item
   def self.parse_header(reader, stack)
     title = nil
     base = ''
@@ -103,6 +128,7 @@ module RssSpeedReader
   end
 
 
+  # Parse the items, yeilding for each one.
   def self.parse_body(reader, stack, channel_base)
     libxml = {}		# force scope
     links = []		# force scope
@@ -144,7 +170,7 @@ module RssSpeedReader
 	when 'feed'
 	  channel_base = $1 if reader['xml:base'] =~ %r{(.*/).*}
 	  channel_base << '/' unless channel_base =~ %r{/\Z}
-#	  @@logger.info "CHANNEL_BASE(<feed xml:base=>): '#{channel_base}'." if @@logger
+	  @@logger.debug "CHANNEL_BASE(<feed xml:base=>): '#{channel_base}'." if @@logger
 	else
 	  ignore = true  
 	end
@@ -210,7 +236,7 @@ module RssSpeedReader
 
 	  libxml.each_value{|v| v.strip!}
 
-#	  @@logger.info "ITEM_BASE: '#{item_base}'." if @@logger
+	  @@logger.debug "ITEM_BASE: '#{item_base}'." if @@logger
 
 	  yield libxml
 	end
@@ -221,8 +247,10 @@ module RssSpeedReader
 
 
 
-  def RssSpeedReader.resolve_links(links, base_url)
-#    @@logger.debug "LINKS: #{links.inspect}." if @@logger
+  # Helper to select most desireable one among the links in a item, a
+  # heuristic
+  def self.resolve_links(links, base_url)
+    @@logger.debug "LINKS: #{links.inspect}." if @@logger
     max_score = -99
     url = nil
     links.reverse.each do |link|
@@ -247,15 +275,15 @@ module RssSpeedReader
       when 'replies'
 	score -= 3
       end
-#      @@logger.debug "SCORE(#{score}): #{link.inspect}." if @@logger
+      @@logger.debug "SCORE(#{score}): #{link.inspect}." if @@logger
       if score > max_score
 	url = link[:href]
 	max_score = score
       end
     end
     
-#    @@logger.info "URL: #{url.inspect}." if @@logger
-#    @@logger.info "BASE_URL: #{base_url.inspect}." if @@logger
+    @@logger.debug "URL: #{url.inspect}." if @@logger
+    @@logger.debug "BASE_URL: #{base_url.inspect}." if @@logger
     result = if url =~ %r{\Ahttps?://}
       url
     else
@@ -265,7 +293,7 @@ module RssSpeedReader
       # compress any double slashes not in protocol
       "#{base_url}#{url}".gsub(%r{[^:]//}){$&.slice(0, 2)}
     end
-#    @@logger.info "RESULT: '#{result}'." if @@logger
+    @@logger.debug "RESULT: '#{result}'." if @@logger
     result
   end
 end
