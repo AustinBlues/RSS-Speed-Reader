@@ -1,0 +1,16 @@
+---
+:title: Ned Batchelder's blog
+:website_url: 'http://nedbatchelder.com/blog'
+:items:
+- title: A Whirlwind Excursion through Python C Extensions
+  url: http://nedbatchelder.com/blog/200903/a_whirlwind_excursion_through_python_c_extensions.html
+  time: "2009-03-25T22:39:56-05:00"
+  description: "<p>I've finished up the slides and written prose for one of my Pycon talks:\r\n<a href=\"http://nedbatchelder.com/text/whirlext.html\">A Whirlwind Excursion through Python C Extensions</a>.\r\n</p><p align=\"center\"><a href=\"text/whirlext.html\"><img src=\"http://nedbatchelder.com/text/whirlext_000.png\" alt=\"Whirlwind C Extensions slides\" width=\"400\" height=\"300\"></a></p><p>It's a 45 minute talk about how to write C extensions against the Python C\r\nAPI.  Hope you like it...\r\n</p>"
+- title: It's all greek to me
+  url: http://nedbatchelder.com/blog/200903/its_all_greek_to_me.html
+  time: "2009-03-25T08:06:21-05:00"
+  description: "<p>In English, if something is incomprehensible, we'll say, \"It's Greek to me\".\r\nWhat do Greek speakers say? <a class=\"offsite\" href=\"http://languagelog.ldc.upenn.edu/nll/?p=1024\">It turns out</a>\r\nthey point to Chinese or Arabic.\r\n</p>"
+- title: Obama's special joke
+  url: http://nedbatchelder.com/blog/200903/obamas_special_joke.html
+  time: "2009-03-22T07:54:09-05:00"
+  description: "<p>On Jay Leno the other night, President Obama made a joke about his poor\r\nbowling scores, <a class=\"offsite\" href=\"http://www.youtube.com/watch?v=l9EsQAcw-4Y\">saying</a>,\r\n\"I bowled a 129 — it was like Special Olympics.\" Much has been written\r\nabout it. I know Obama didn't intend to slight disabled athletes, he was\r\nslighting himself. But it highlights a popular misconception about Special\r\nOlympics.</p>"

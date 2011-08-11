@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2enclosuresfull.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds2.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Rubyology</title>
+    <link>http://www.rubyology.com/</link>
+    <language>en-us</language>
+    <copyright>Copyright 2007 Chris Matthieu</copyright>
+    <itunes:subtitle>The Rubyology podcast is a series of lessons learned by Chris Matthieu on his endeavor of switching from Microsoft .NET programming to Ruby on Rails. Believe it or not, there are similarities between both Micorost ASP and .NET and Ruby on Rails. Let Chris</itunes:subtitle>
+    <itunes:author>Chris Matthieu</itunes:author>
+    <itunes:summary>The Rubyology podcast is a series of lessons learned by Chris Matthieu on his endeavor of switching from Microsoft .NET programming to Ruby on Rails.  Believe it or not, there are similarities between both Micorost ASP and .NET and Ruby on Rails.  Let Chris show you how to get up and running on Rails and become proficient with Ruby with little effort.  Learn AJAX tricks, tagging, buddy lists, rating, and other Web 2.0 social network programming techniques and get your idea to market today!  While you are at it, check out the Rubyology.com website for code snippets and additional show information.</itunes:summary>
+    <description>The Rubyology podcast is a series of lessons learned by Chris Matthieu on his endeavor of switching from Microsoft .NET programming to Ruby on Rails.  Believe it or not, there are similarities between both Micorost ASP and .NET and Ruby on Rails.  Let Chris show you how to get up and running on Rails and become proficient with Ruby with little effort.  Learn AJAX tricks, tagging, buddy lists, rating, and other Web 2.0 social network programming techniques and get your idea to market today!  While you are at it, check out the Rubyology.com website for code snippets and additional show information.</description>
+    
+    <itunes:image href="http://rubyology.com/images/rubyology.jpg" />
+    <itunes:explicit>no</itunes:explicit>
+    
+    <media:copyright>Copyright 2007 Chris Matthieu</media:copyright><media:thumbnail url="http://rubyology.com/images/rubyology.jpg" /><media:keywords>ruby,rails,ruby,on,rails,programming,web,2,0,rubyology</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Software How-To</media:category><itunes:owner><itunes:email>chris@rubyology.com</itunes:email><itunes:name>Chris Matthieu</itunes:name></itunes:owner><itunes:keywords>ruby,rails,ruby,on,rails,programming,web,2,0,rubyology</itunes:keywords><itunes:category text="Technology"><itunes:category text="Software How-To" /></itunes:category><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds2.feedburner.com/Rubyology" type="application/rss+xml" /><item>
+      <title>Rubyology 78: ruby-processing, Heroku, S3 analytics.</title>
+      <itunes:author>Chris Matthieu</itunes:author>
+      <itunes:subtitle>Roundtable discussion on 3D GUI development with ruby-processing; Heroku overview and Q&amp;A; AWS S3 analytics.
+
+Participants: Marc Chung, Preston Lee, Saul Mora, remi Taylor. (&lt;a href="http://openrain.com"&gt;OpenRain Ruby development ninjas.&lt;/a&gt;)
+
+&lt;a href="http://groups.google.com/group/rubyology"&gt;Google Group&lt;/a&gt;
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-78-high.m4a"&gt;Alternate AAC Version&lt;/a&gt;
+</itunes:subtitle>
+      <itunes:summary>Roundtable discussion on 3D GUI development with ruby-processing; Heroku overview and Q&amp;A; AWS S3 analytics.
+
+Participants: Marc Chung, Preston Lee, Saul Mora, remi Taylor. (&lt;a href="http://openrain.com"&gt;OpenRain Ruby development ninjas.&lt;/a&gt;)
+
+&lt;a href="http://groups.google.com/group/rubyology"&gt;Google Group&lt;/a&gt;
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-78-high.m4a"&gt;Alternate AAC Version&lt;/a&gt;
+</itunes:summary>
+      <description>Roundtable discussion on 3D GUI development with ruby-processing; Heroku overview and Q&amp;A; AWS S3 analytics.
+
+Participants: Marc Chung, Preston Lee, Saul Mora, remi Taylor. (&lt;a href="http://openrain.com"&gt;OpenRain Ruby development ninjas.&lt;/a&gt;)
+
+&lt;a href="http://groups.google.com/group/rubyology"&gt;Google Group&lt;/a&gt;
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-78-high.m4a"&gt;Alternate AAC Version&lt;/a&gt;
+</description>
+      <enclosure type="audio/mpeg" url="http://rubyology.s3.amazonaws.com/rubyology-78-high.mp3" />
+      <guid>http://rubyology.s3.amazonaws.com/rubyology-78-high.mp3</guid>
+      <pubDate>Wed, 08 Apr 2009 17:19:00 -0500</pubDate>
+      <itunes:duration>15:00</itunes:duration>
+      <itunes:keywords>ruby,rails,ruby on rails,programming,web 2.0,rubyology</itunes:keywords>
+    <author>chris@rubyology.com (Chris Matthieu)</author><media:content url="http://rubyology.s3.amazonaws.com/rubyology-78-high.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit></item>
+    <item>
+      <title>Rubyology 77: Ruby In The Enterprise, Part 2</title>
+      <itunes:author>Chris Matthieu</itunes:author>
+      <itunes:subtitle>Interview with &lt;a href="http://phoenix.edu"&gt;University of Phoenix&lt;/a&gt; Senior Software Engineer &lt;a href="http://aaronkhawkins.com"&gt;Aaron K. Hawkins&lt;/a&gt;.
+
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-77-high.m4a"&gt;Enhanced AAC Version&lt;/a&gt;</itunes:subtitle>
+      <itunes:summary>Interview with &lt;a href="http://phoenix.edu"&gt;University of Phoenix&lt;/a&gt; Senior Software Engineer &lt;a href="http://aaronkhawkins.com"&gt;Aaron K. Hawkins&lt;/a&gt;.
+
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-77-high.m4a"&gt;Enhanced AAC Version&lt;/a&gt;</itunes:summary>
+      <description>Interview with &lt;a href="http://phoenix.edu"&gt;University of Phoenix&lt;/a&gt; Senior Software Engineer &lt;a href="http://aaronkhawkins.com"&gt;Aaron K. Hawkins&lt;/a&gt;.
+
+&lt;a href="http://rubyology.s3.amazonaws.com/rubyology-77-high.m4a"&gt;Enhanced AAC Version&lt;/a&gt;
+</description>
+      <enclosure type="audio/mpeg" url="http://rubyology.s3.amazonaws.com/rubyology-77-high.mp3" />
+      <guid>http://rubyology.s3.amazonaws.com/rubyology-77-high.mp3</guid>
+      <pubDate>Sun, 08 Mar 2009 17:22:00 -0500</pubDate>
+      <itunes:duration>15:00</itunes:duration>
+      <itunes:keywords>ruby,rails,ruby on rails,programming,web 2.0,rubyology</itunes:keywords>
+    <author>chris@rubyology.com (Chris Matthieu)</author><media:content url="http://rubyology.s3.amazonaws.com/rubyology-77-high.mp3" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit></item>
+  <media:credit role="author">Chris Matthieu</media:credit><media:rating>nonadult</media:rating><media:description type="plain">The Rubyology podcast is a series of lessons learned by Chris Matthieu on his endeavor of switching from Microsoft .NET programming to Ruby on Rails. Believe it or not, there are similarities between both Micorost ASP and .NET and Ruby on Rails. Let Chris</media:description></channel>
+</rss>

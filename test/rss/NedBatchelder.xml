@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet
+			type="text/xsl"
+			href="http://nedbatchelder.com/rssfull2html.xslt"
+			media="screen"
+		?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://purl.org/rss/1.0/">
+    <channel rdf:about="http://nedbatchelder.com//blog">
+        <title>Ned Batchelder's blog</title>
+        <link>http://nedbatchelder.com/blog</link>
+        <description>Ned Batchelder's personal blog.</description>
+        <dc:language>en-US</dc:language>
+        <image rdf:resource="http://nedbatchelder.com/pix/rss-banner.gif"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/a_whirlwind_excursion_through_python_c_extensions.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/its_all_greek_to_me.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/obamas_special_joke.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/happy_pi_day.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/subversion_changelists.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/the_cult_of_done.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/watchmen_cake.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/light_calligraphy.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/coveragepy_v30b1.html"/>
+                
+                    <rdf:li resource="http://nedbatchelder.com/blog/200903/hodgmans_meh.html"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://nedbatchelder.com/pix/rss-banner.gif">
+        <title>Ned Batchelder's blog</title>
+        <link>http://nedbatchelder.com/blog</link>
+        <url>http://nedbatchelder.com/pix/rss-banner.gif</url>
+    </image>
+    
+    
+    <item rdf:about="http://nedbatchelder.com/blog/200903/a_whirlwind_excursion_through_python_c_extensions.html">
+        <title>A Whirlwind Excursion through Python C Extensions</title>
+        <link>http://nedbatchelder.com/blog/200903/a_whirlwind_excursion_through_python_c_extensions.html</link>
+		
+        <dc:date>2009-03-25T22:39:56-05:00</dc:date>
+        <description><![CDATA[<p>I've finished up the slides and written prose for one of my Pycon talks:
+<a href="http://nedbatchelder.com/text/whirlext.html">A Whirlwind Excursion through Python C Extensions</a>.
+</p><p align="center"><a href="text/whirlext.html"><img src="http://nedbatchelder.com/text/whirlext_000.png" alt="Whirlwind C Extensions slides" width="400" height="300"></a></p><p>It's a 45 minute talk about how to write C extensions against the Python C
+API.  Hope you like it...
+</p>
+]]></description>
+    </item>
+    
+    <item rdf:about="http://nedbatchelder.com/blog/200903/its_all_greek_to_me.html">
+        <title>It&#39;s all greek to me</title>
+        <link>http://nedbatchelder.com/blog/200903/its_all_greek_to_me.html</link>
+		
+        <dc:date>2009-03-25T08:06:21-05:00</dc:date>
+        <description><![CDATA[<p>In English, if something is incomprehensible, we'll say, "It's Greek to me".
+What do Greek speakers say? <a class="offsite" href="http://languagelog.ldc.upenn.edu/nll/?p=1024">It turns out</a>
+they point to Chinese or Arabic.
+</p>
+]]></description>
+    </item>
+    
+    <item rdf:about="http://nedbatchelder.com/blog/200903/obamas_special_joke.html">
+        <title>Obama&#39;s special joke</title>
+        <link>http://nedbatchelder.com/blog/200903/obamas_special_joke.html</link>
+		
+        <dc:date>2009-03-22T07:54:09-05:00</dc:date>
+        <description><![CDATA[<p>On Jay Leno the other night, President Obama made a joke about his poor
+bowling scores, <a class="offsite" href="http://www.youtube.com/watch?v=l9EsQAcw-4Y">saying</a>,
+"I bowled a 129 — it was like Special Olympics." Much has been written
+about it. I know Obama didn't intend to slight disabled athletes, he was
+slighting himself. But it highlights a popular misconception about Special
+Olympics.</p>]]></description>
+    </item>
+</rdf:RDF>

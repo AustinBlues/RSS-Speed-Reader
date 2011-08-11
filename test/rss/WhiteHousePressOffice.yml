@@ -1,0 +1,14 @@
+--- 
+:title: White House.gov Press Office Feed
+:website_url: http://www.whitehouse.gov
+:items: 
+- title: "ADVISORY: Tomorrow: President Barack Obama to Give Major Speech on the Economy at Georgetown University"
+  url: http://www.whitehouse.gov/the_press_office/ADVISORY-Tomorrow-President-Barack-Obama-to-Give-Major-Speech-on-the-Economy-at-Georgetown-University/
+  time: "2009-04-13T17:01:00Z"
+  ident: urn:uuid:20090413170100
+  description: President Barack Obama will deliver a major speech on the economy Tuesday, April 14th, at Georgetown University.  The speech will take place at 11:30 AM EDT in Gaston Hall.
+- title: Remarks by the President and Vice President at the Department of Transportation
+  url: http://www.whitehouse.gov/the_press_office/Remarks-by-the-President-and-Vice-President-at-the-Department-of-Transportation/
+  time: "2009-04-13T16:46:00Z"
+  ident: urn:uuid:20090413164600
+  description: ""

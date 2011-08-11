@@ -1,0 +1,23 @@
+--- 
+:title: Rubyology
+:website_url: http://www.rubyology.com/
+:items: 
+- title: "Rubyology 78: ruby-processing, Heroku, S3 analytics."
+  url: http://rubyology.s3.amazonaws.com/rubyology-78-high.mp3
+  time: Wed, 08 Apr 2009 17:19:00 -0500
+  ident: http://rubyology.s3.amazonaws.com/rubyology-78-high.mp3
+  description: |-
+    Roundtable discussion on 3D GUI development with ruby-processing; Heroku overview and Q&A; AWS S3 analytics.
+    
+    Participants: Marc Chung, Preston Lee, Saul Mora, remi Taylor. (<a href="http://openrain.com">OpenRain Ruby development ninjas.</a>)
+    
+    <a href="http://groups.google.com/group/rubyology">Google Group</a>
+    <a href="http://rubyology.s3.amazonaws.com/rubyology-78-high.m4a">Alternate AAC Version</a>
+- title: "Rubyology 77: Ruby In The Enterprise, Part 2"
+  url: http://rubyology.s3.amazonaws.com/rubyology-77-high.mp3
+  time: Sun, 08 Mar 2009 17:22:00 -0500
+  ident: http://rubyology.s3.amazonaws.com/rubyology-77-high.mp3
+  description: |-
+    Interview with <a href="http://phoenix.edu">University of Phoenix</a> Senior Software Engineer <a href="http://aaronkhawkins.com">Aaron K. Hawkins</a>.
+    
+    <a href="http://rubyology.s3.amazonaws.com/rubyology-77-high.m4a">Enhanced AAC Version</a>

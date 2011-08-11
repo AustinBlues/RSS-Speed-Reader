@@ -1,0 +1,18 @@
+--- 
+:title: Ruby Best Practices
+:website_url: http://blog.rubybestpractices.com/
+:items: 
+- title: 25th Post!
+  url: http://feedproxy.google.com/~r/RubyBestPractices/~3/j8mAeJ1ElIc/010-twenty-five.html
+  time: Tue, 07 Jul 2009 05:00:00 -0000
+  ident: http://blog.rubybestpractices.com/posts/gregory/010-twenty-five.html
+  description: |-
+    <p>This is the 25th post to <span class="caps">RBP</span> blog!  Hooray!</p>
+    <p>We&#8217;ve been really happy with how things have gone so far.  Conversations have been for the most part civil and lively, we haven&#8217;t run out of content, and the blog has seen new content nearly every week.</p>
+- title: "Code Blocks: Ruby's Swiss Army Knife"
+  url: http://feedproxy.google.com/~r/RubyBestPractices/~3/GeS3Gv3iQf0/009-beautiful-blocks.html
+  time: Tue, 07 Jul 2009 04:00:00 -0000
+  ident: http://blog.rubybestpractices.com/posts/gregory/009-beautiful-blocks.html
+  description: |-
+    <p><b>The following blog post is a direct excerpt from the <a href="http://oreilly.com/catalog/9780596523008/">Ruby Best Practices</a> book.  If you&#8217;ve been enjoying this blog, you&#8217;d probably love the book, so I&#8217;ve decided to release some content here to give you a sense of what to expect.  Enjoy!</b></p>
+    <p><i><span class="caps">UPDATE</span>: For those coming from other languages, Ruby&#8217;s <a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29#Blocks_and_iterators">code blocks</a> are inherently <a href="http://en.wikipedia.org/wiki/Closure_%28computer_science%29">closures</a> , and provide syntactic sugar for methods that accept <tt>Proc</tt> objects (Ruby&#8217;s anonymous functions).  While not strictly necessary for understanding this article, a solid grasp on what closures are and how they work will take you far.</i></p>

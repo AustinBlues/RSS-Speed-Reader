@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "windows-1255"?>
+<rss version='2.0'>
+<channel>
+<title>Haaretz.com - News</title>
+<copyright>Copyright (c) 2005 Haaretz. All rights reserved.</copyright>
+<link>http://www.haaretz.com</link>
+<description>News</description>
+<language>he</language>
+<ttl>10</ttl>
+<image>
+ <height>32</height>
+ <width>129</width>
+<link>http://www.haaretz.com</link>
+<title>Harretz</title>
+<url>http://www.haaretz.com/hasen/images/logoHaaretz.gif</url>
+</image>
+<item>
+	<title><![CDATA[Noam Shalit to UN: My son's abduction sparked Gaza turmoil]]></title>
+	<link>http://www.haaretz.com/hasen/spages/1098138.html</link>
+	<pubDate>Mon, 06 Jul 2009 17:02:42 GMT+03:00</pubDate>
+	<description><![CDATA[Noam Shalit, the father of kidnapped soldier Gilad Shalit, testified Monday in Geneva before the United Nations committee investigating the Israel Defense Forces' actions during Operation Cast Lead.
+...
+]]></description>
+</item>
+<item>
+	<title><![CDATA[Peres: Syria won't get Golan on a 'silver platter']]></title>
+	<link>http://www.haaretz.com/hasen/spages/1098143.html</link>
+	<pubDate>Mon, 06 Jul 2009 16:58:30 GMT+03:00</pubDate>
+	<description><![CDATA[President Shimon Peres said on Monday that Syrian President Bashar Assad must understand that Israel would not hand over the Golan Heights on a "silver platter" so long as Damascus continued its ties with Iran and Hezbollah.
+...
+]]></description>
+</item>
+<item>
+	<title><![CDATA[Lieberman: As settler, I avoid negotiating West Bank policy]]></title>
+	<link>http://www.haaretz.com/hasen/spages/1098190.html</link>
+	<pubDate>Mon, 06 Jul 2009 16:52:32 GMT+03:00</pubDate>
+	<description><![CDATA[Foreign Minister Avigdor Lieberman said Monday that he had deliberately chosen to avoid taking part in the debate over West Bank settlement, as his own residence in a settlement would pose a conflict of interest.
+...
+]]></description>
+</item>
+</channel>
+</rss>
+
+

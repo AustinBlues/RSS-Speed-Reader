@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'
+      xmlns:thr='http://purl.org/syndication/thread/1.0'
+      xml:base='http://www.tbray.org/ongoing/ongoing.atom'
+      xml:lang='en-us'>
+ <title>ongoing</title>
+ <id>http://www.tbray.org/ongoing/</id>
+ <link href='./' />
+ <link rel='self' href='' />
+ <link rel='replies'       thr:count='101'       href='/home/tbray.org/www/html/ongoing/comments.atom' />
+ <logo>rsslogo.jpg</logo>
+ <icon>/favicon.ico</icon>
+ <updated>2009-04-07T21:11:03-07:00</updated>
+ <author><name>Tim Bray</name></author>
+ <subtitle>ongoing fragmented essay by Tim Bray</subtitle>
+ <rights>All content written by Tim Bray and photos by Tim Bray Copyright Tim Bray, some rights reserved, see /ongoing/misc/Copyright</rights>
+ <generator uri='/misc/Colophon'>Generated from XML source code using Perl, Expat, Emacs, Mysql, Ruby, Java, and ImageMagick.  Industrial-strength technology, baby.</generator>
+
+<entry xml:base='When/200x/2009/04/06/'>
+ <title>It&#x2019;s a Beautiful Day</title>
+ <link href='Its-a-Beautiful-Day' />
+ <link rel='replies'        thr:count='0'        type='application/xhtml+xml'        href='Its-a-Beautiful-Day#comments' />
+ <id>http://www.tbray.org/ongoing/When/200x/2009/04/06/Its-a-Beautiful-Day</id>
+ <published>2009-04-06T02:00:00-07:00</published>
+ <updated>2009-04-06T01:18:04-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Sports/Baseball' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Sports' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Baseball' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>Opening Day, I mean. Around here that means Little Mountain Baseball, for boys and girls aged 4 to 12.  That first number&#x2019;s not a misprint; they have this thing called &#x201c;Blast Ball&#x201d; for the near-toddlers. The sun was up and the colours were bright.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>Opening Day, I mean. Around here that means Little Mountain Baseball,
+for boys and girls aged 4 to 12.  That first number’s not a
+misprint; they have this thing called “Blast Ball” for the near-toddlers.
+The sun was up and the colours were bright.</p>
+<p>We had a parade, there were speeches and the National Anthem, ceremonial
+first pitches, hot dogs at the concession stands; everything you need to make
+the day complete.</p>
+<p>On the third-base side of the diamond, the younger kids, with their
+handlers:</p>
+<img src="PS083606.png" alt="Little Mountain baseball Opening Day, 2009" />
+<p>A few of them gathered at home plate, I can’t remember whether this was
+singing the national anthem or reciting the Little League Pledge.</p>
+<img src="PS083609.png" alt="Little Mountain baseball Opening Day, 2009" />
+<p>This is during “O Canada”.  The kids have no idea what the old folks
+standing proud in their uniforms are standing for, but they’ll get it some
+day.</p>
+<img src="PS083613.png" alt="Little Mountain baseball Opening Day, 2009" />
+<p>Here’s a somewhat-older division, taking the pledge.  Where we play, it’s
+pretty scenic.</p>
+<img src="PS083621.png" alt="Little Mountain baseball Opening Day, 2009" />
+<p>The catchers in full regalia are running out to take the ceremonial opening
+pitches; one from Don Davies, our local Member of Parliament, and the other
+from the local minor-league ball team’s mascot.  Don gave an admirably-brief
+speech focused squarely on the matter at hand, baseball; then both he and the
+oversized stuffed animal got something near enough to home plate for the
+little catchers to handle.</p>
+<img src="PS083645.png" alt="Little Mountain baseball Opening Day, 2009" />
+<p>And then, as they all marched out, someone put the chorus of U2’s
+<cite>Beautiful Day</cite> on the PA, and my heart lifted, because it was.</p>
+</div></content></entry>
+
+<entry xml:base='When/200x/2009/04/05/'>
+ <title>Al3x, Meet Ted</title>
+ <link href='Al3x-meet-Ted' />
+ <link rel='replies'        thr:count='10'        type='application/xhtml+xml'        href='Al3x-meet-Ted#comments' />
+ <id>http://www.tbray.org/ongoing/When/200x/2009/04/05/Al3x-meet-Ted</id>
+ <published>2009-04-05T02:00:00-07:00</published>
+ <updated>2009-04-05T22:53:52-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Journalism' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Journalism' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Life Online' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Life Online' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Web' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Web' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'><a href='http://al3x.net/'>Alex Payne</a> is known by thousands as <a href='http://twitter.com/al3x'>al3x</a>.  He&#x2019;s a developer at Twitter.  I&#x2019;ve been a fan since he wrote what I consider to be the <a href='https://twitter.com/al3x/status/1050814372'>single greatest tweet ever</a> by anyone.  He just published <a href='http://al3x.net/2009/04/04/reasoned-technical-discussion.html'>Mending The Bitter Absence of Reasoned Technical Discussion</a>, which is good, but wrong in an essential way.  Ted is <a href='http://en.wikipedia.org/wiki/Theodore_Sturgeon'>Theodore Sturgeon</a>.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p><a href="http://al3x.net/">Alex Payne</a> is known by thousands as
+<a href="http://twitter.com/al3x">al3x</a>.  He’s a developer at
+Twitter.  I’ve been a fan since he wrote what I consider to be the
+<a href="https://twitter.com/al3x/status/1050814372">single greatest tweet ever</a>
+by anyone.  He just published
+<a href="http://al3x.net/2009/04/04/reasoned-technical-discussion.html">Mending The Bitter Absence of Reasoned Technical Discussion</a>,
+which is good, but wrong in an essential way.  Ted is
+<a href="http://en.wikipedia.org/wiki/Theodore_Sturgeon">Theodore
+Sturgeon</a>.</p>
+<p>Alex had previously, and correctly,
+<a href="http://al3x.net/2009/03/03/towards-better-technology-journalism.html">lamented</a>
+the quality of tech journalism.  In this outing he deplores the general
+quality of online discourse.  He speaks from experience, having gone on the
+record about Ruby performance issues and Twitter’s use of Scala as an
+alternative; this drew the outspoken ire of the Ruby religiosos.  For a polite
+example see Obie Fernandez’s
+<a href="http://blog.obiefernandez.com/content/2009/04/my-reasoned-response-about-scala-at-twitter.html">My Reasoned Response about Scala at Twitter</a>.
+I’m not only a Ruby fan but a Scala skeptic, and I found Alex’s 
+commentary illuminating and useful.</p>
+<p>On the other hand, Alex is largely wrong about the quality of online
+discourse.  We are in the golden age (in my profession at least) of
+high-quality well-informed analysis and insight on the things
+that really matter.</p>
+<p>Well, yeah, there’s a lot of flamage and stupidity too, and Alex is hardly
+alone in his observation of behavior that can be called at best “tribal”.
+Well, so what?  At this point I appeal to
+<a href="http://en.wikipedia.org/wiki/Sturgeon%27s_law">Sturgeon’s Law</a>,
+usually stated as “95% of everything is crap”.</p>
+<p>The key thing is, you have to do some mental filtering and look at the
+other 5%. The Internet helps via PageRank and friends, but
+independent thinking is required too: make your own finding as to
+who’s worth listening to.  It seems a low price to pay for the privilege of
+being the best-informed generation in history.</p>
+</div></content></entry>
+</feed>
