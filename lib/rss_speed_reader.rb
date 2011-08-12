@@ -34,8 +34,6 @@ module RssSpeedReader
       libxmls = []
 
       RssSpeedReader.parse_body(reader, stack, channel_base) do |libxml|
-	raise "MISSING POST TITLE!" unless libxml['title']
-	raise "MISSING POST URL!" unless libxml['url']
 	libxmls << libxml
       end
     end
