@@ -5,9 +5,12 @@ Fast RSS parser for importing RSS feeds.
 ## Getting started
 	gem install rss_speed_reader
 
-## [Examples](http://github.com/AustinBlues/RSS-Speed-Reader/tree/masterexamples)
+## [Examples](http://github.com/AustinBlues/RSS-Speed-Reader/tree/master/examples)
 	cd examples
 	bundle exec ruby rss_to_yaml.rb < ../test/rss/24ways.xml
+
+## Testing
+	bundle exec test/test_suite.rb
 
 ## Dependencies
 - libxml-ruby - Gem
