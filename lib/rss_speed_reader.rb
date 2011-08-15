@@ -234,7 +234,7 @@ module RssSpeedReader
 
 	  libxml.each_value{|v| v.strip!}
 
-	  @@logger.debug "ITEM_BASE: '#{item_base}'." if @@logger
+#	  @@logger.debug "ITEM_BASE: '#{item_base}'." if @@logger
 
 	  yield libxml
 	end
@@ -248,7 +248,7 @@ module RssSpeedReader
   # Helper to select most desireable one among the links in a item, a
   # heuristic
   def self.resolve_links(links, base_url)
-    @@logger.debug "LINKS: #{links.inspect}." if @@logger
+#    @@logger.debug "LINKS: #{links.inspect}." if @@logger
     max_score = -99
     url = nil
     links.reverse.each do |link|
@@ -273,15 +273,15 @@ module RssSpeedReader
       when 'replies'
 	score -= 3
       end
-      @@logger.debug "SCORE(#{score}): #{link.inspect}." if @@logger
+#      @@logger.debug "SCORE(#{score}): #{link.inspect}." if @@logger
       if score > max_score
 	url = link[:href]
 	max_score = score
       end
     end
     
-    @@logger.debug "URL: #{url.inspect}." if @@logger
-    @@logger.debug "BASE_URL: #{base_url.inspect}." if @@logger
+#    @@logger.debug "URL: #{url.inspect}." if @@logger
+#    @@logger.debug "BASE_URL: #{base_url.inspect}." if @@logger
     result = if url =~ %r{\Ahttps?://}
       url
     else
@@ -291,7 +291,7 @@ module RssSpeedReader
       # compress any double slashes not in protocol
       "#{base_url}#{url}".gsub(%r{[^:]//}){$&.slice(0, 2)}
     end
-    @@logger.debug "RESULT: '#{result}'." if @@logger
+#    @@logger.debug "RESULT: '#{result}'." if @@logger
     result
   end
 end
