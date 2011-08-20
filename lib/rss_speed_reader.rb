@@ -50,12 +50,15 @@ module RssSpeedReader
     begin
       status = reader.read
     rescue LibXML::XML::Error
-      raise NotRSS
+      raise NotRSS, 'not XML'
     rescue
       @@logger.warn "HEADER READ ERROR(#{$!.class}): '#{$!}'." if @@logger
       @@logger.warn $!.backtrace if @@logger
       return title, website_url, base
+    else
+      raise NotRSS, 'empty file' unless status
     end
+
     while status
       case reader.node_type
       when XML::Reader::TYPE_ELEMENT
