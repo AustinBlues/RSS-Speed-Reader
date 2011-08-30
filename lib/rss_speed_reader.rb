@@ -20,6 +20,12 @@ module RssSpeedReader
   end
 
 
+  # Log if @@logger
+  def self.log(method, *args)
+    @@logger.send(method, args) if @@logger
+  end
+
+
   # Parse RSS, reading XML from +io+, returning hash with all RSS
   # feed relevant data.
   def self.parse(reader)
@@ -52,8 +58,8 @@ module RssSpeedReader
     rescue LibXML::XML::Error
       raise NotRSS, 'not XML'
     rescue
-      @@logger.warn "HEADER READ ERROR(#{$!.class}): '#{$!}'." if @@logger
-      @@logger.warn $!.backtrace if @@logger
+      log(:warn, "HEADER READ ERROR(#{$!.class}): '#{$!}'.")
+      log(:warn, $!.backtrace)
       return title, website_url, base
     else
       raise NotRSS, 'empty file' unless status
@@ -86,7 +92,7 @@ module RssSpeedReader
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_elements)
-	  @@logger.debug "BEGIN(#{path})" if @@logger
+	  log(:debug, "BEGIN(#{path})")
 	end
 	stack.pop if reader.empty_element?
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
@@ -109,14 +115,14 @@ module RssSpeedReader
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_values)
-	  @@logger.debug "DATA(#{path}): #{reader.value}" if @@logger
+	  log(:debug, "DATA(#{path}): #{reader.value}")
 	end
       when XML::Reader::TYPE_END_ELEMENT
 	stack.pop
 	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_elements)
 	  path = stack.join('>')
-	  @@logger.debug "END(#{path})" if @@logger
+	  log(:debug, "END(#{path})")
 	end
       when XML::Reader::TYPE_DOCUMENT_TYPE
 	type = reader.name.strip
@@ -125,7 +131,7 @@ module RssSpeedReader
       begin
 	status = reader.read
       rescue
-	@@logger.warn "HEADER2 READ ERROR: '#{$!}'." if @@logger
+	log(:warn, "HEADER2 READ ERROR: '#{$!}'.")
 	return title, website_url, base
       end
     end
@@ -168,7 +174,7 @@ module RssSpeedReader
 	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
 	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
 	  links = []
-	  #	  @@logger.debug "RESET LINKS." if @@logger
+	  #	  log(:debug, "RESET LINKS.")
 	  libxml = {'description' => 'MISSING'}
 	  item_base = channel_base ? channel_base.dup : ''
 	  item_base << reader['xml:base'] if reader['xml:base']
@@ -176,13 +182,13 @@ module RssSpeedReader
 	when 'feed'
 	  channel_base = $1 if reader['xml:base'] =~ %r{(.*/).*}
 	  channel_base << '/' unless channel_base =~ %r{/\Z}
-	  @@logger.debug "CHANNEL_BASE(<feed xml:base=>): '#{channel_base}'." if @@logger
+	  log(:debug, "CHANNEL_BASE(<feed xml:base=>): '#{channel_base}'.")
 	else
 	  ignore = true  
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_elements)
-	  @@logger.debug "BEGIN(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}" if @@logger
+	  log(:debug, "BEGIN(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}")
 	end
 	stack.pop if reader.empty_element?
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
@@ -209,13 +215,13 @@ module RssSpeedReader
 	when 'feed/entry/updated'
 	  libxml['time'] = reader.value
 	when %r{guid\Z}
-	  @@logger.info "GUID: '#{reader.value}'." if @@logger
+	  log(:info, "GUID: '#{reader.value}'.")
 	else
 	  ignore = true
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_values)
-	  @@logger.debug "DATA(#{path}): '#{reader.value}'" if @@logger
+	  log(:debug, "DATA(#{path}): '#{reader.value}'")
 	end
       when XML::Reader::TYPE_END_ELEMENT
 	path = stack.join('/')
@@ -231,18 +237,18 @@ module RssSpeedReader
 
 	  # FIXME debug code
 	  if libxml['url'] !~ %r{\Ahttps?://}i
-	    @@logger.warn "MISSING PROTOCOL: '#{libxml['url']}'." if @@logger
-	    @@logger.warn "  BASE: '#{item_base}'." if @@logger
-	    @@logger.warn "  LINKS: '#{links.inspect}'." if @@logger
+	    log(:warn, "MISSING PROTOCOL: '#{libxml['url']}'.")
+	    log(:warn, "  BASE: '#{item_base}'.")
+	    log(:warn, "  LINKS: '#{links.inspect}'.")
 	  end
 	  if libxml['url'] !~ %r{/?\w+(\.\w+)+/?}
-	    @@logger.warn "MISSING DOMAIN: '#{libxml['url']}'." if @@logger
-	    @@logger.warn "  BASE: '#{item_base}'." if @@logger
+	    log(:warn, "MISSING DOMAIN: '#{libxml['url']}'.")
+	    log(:warn, "  BASE: '#{item_base}'.")
 	  end
 
 	  libxml.each_value{|v| v.strip!}
 
-#	  @@logger.debug "ITEM_BASE: '#{item_base}'." if @@logger
+#	  log(:debug, "ITEM_BASE: '#{item_base}'.")
 
 	  yield libxml
 	end
@@ -250,7 +256,7 @@ module RssSpeedReader
 	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_elements)
 	  path = stack.join('>')
-	  @@logger.debug "END(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}" if @@logger
+	  log(:debug, "END(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}")
 	end
       end
     end while reader.read
@@ -261,7 +267,7 @@ module RssSpeedReader
   # Helper to select most desireable one among the links in a item, a
   # heuristic
   def self.resolve_links(links, base_url)
-#    @@logger.debug "LINKS: #{links.inspect}." if @@logger
+#    log(:debug, "LINKS: #{links.inspect}.")
     max_score = -99
     url = nil
     links.reverse.each do |link|
@@ -286,15 +292,15 @@ module RssSpeedReader
       when 'replies'
 	score -= 3
       end
-#      @@logger.debug "SCORE(#{score}): #{link.inspect}." if @@logger
+#      log(:debug, "SCORE(#{score}): #{link.inspect}.")
       if score > max_score
 	url = link[:href]
 	max_score = score
       end
     end
     
-#    @@logger.debug "URL: #{url.inspect}." if @@logger
-#    @@logger.debug "BASE_URL: #{base_url.inspect}." if @@logger
+#    log(:debug, "URL: #{url.inspect}.")
+#    log(:debug, "BASE_URL: #{base_url.inspect}.")
     result = if url =~ %r{\Ahttps?://}
       url
     else
@@ -304,7 +310,7 @@ module RssSpeedReader
       # compress any double slashes not in protocol
       "#{base_url}#{url}".gsub(%r{[^:]//}){$&.slice(0, 2)}
     end
-#    @@logger.debug "RESULT: '#{result}'." if @@logger
+#    log(:debug, "RESULT: '#{result}'.")
     result
   end
 end
