@@ -26,6 +26,17 @@ module RssSpeedReader
   end
 
 
+  def self.trace(tag_type, stack)
+    if tag_type != :all && !TRACE.include?(tag_type)
+      false
+    else
+      indentation = '  ' * (stack.size-1)
+      log(:debug, "#{indentation}#{yield}") if block_given?
+      true
+    end
+  end
+
+
   # Parse RSS, reading XML from +io+, returning hash with all RSS
   # feed relevant data.
   def self.parse(reader)
@@ -35,6 +46,9 @@ module RssSpeedReader
       title, website_url, channel_base = RssSpeedReader.parse_header(reader, stack)
       channel_base ||= website_url
 
+#      trace(:essential_elements, stack) do
+#	"<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
+#      end
       stack.pop
 
       libxmls = []
@@ -68,9 +82,9 @@ module RssSpeedReader
     while status
       case reader.node_type
       when XML::Reader::TYPE_ELEMENT
+	tag_type = :essential_elements
 	stack << reader.name
 	path = stack.join('/')
-	ignore = false
 	case path
 	when 'feed', 'rss', 'rss10', 'rss11', 'rdf:RDF', 'atom03', 'atom', 'atom10'
 	  base = $1 if reader['xml:base'] =~ %r{(.*/).*}
@@ -87,17 +101,16 @@ module RssSpeedReader
 	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
 	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
 	  break		# end of header
+	when 'rss/channel'
 	else
-	  ignore = true
+	  tag_type = reader.name
 	end
-	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_elements)
-	  log(:debug, "BEGIN(#{path})")
+	trace(tag_type, stack) do
+	  "<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
 	end
 	stack.pop if reader.empty_element?
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
 	path = stack.join('/')
-	ignore = false
 	case path
 	when 'rss', 'feed', 'rdf:RDF'
 	  feed_type = reader.name
@@ -110,20 +123,15 @@ module RssSpeedReader
 	when 'redirect/newLocation'
 	  rss_url = reader.value.strip
 	  raise RssSpeedReader::NewLocation, rss_url
-	else
-	  ignore = true
 	end
-	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_values)
-	  log(:debug, "DATA(#{path}): #{reader.value}")
+	trace(tag_type, stack) do
+	  "  DATA(#{stack[-1]}): #{reader.value}"
 	end
       when XML::Reader::TYPE_END_ELEMENT
-	stack.pop
-	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_elements)
-	  path = stack.join('>')
-	  log(:debug, "END(#{path})")
+	trace(tag_type, stack) do
+	  "</#{stack[-1]}>"
 	end
+	stack.pop
       when XML::Reader::TYPE_DOCUMENT_TYPE
 	type = reader.name.strip
 	raise NotRSS, type unless type =~ /\A(xml|rss|rdf:RDF)\z/i
@@ -149,7 +157,7 @@ module RssSpeedReader
       when XML::Reader::TYPE_ELEMENT
 	stack << reader.name
 	path = stack.join('/')
-	ignore = false
+	tag_type = :essential_elements
 	case path
 	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
 	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
@@ -184,16 +192,14 @@ module RssSpeedReader
 	  channel_base << '/' unless channel_base =~ %r{/\Z}
 	  log(:debug, "CHANNEL_BASE(<feed xml:base=>): '#{channel_base}'.")
 	else
-	  ignore = true  
+	  tag_type = stack[-1]
 	end
-	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_elements)
-	  log(:debug, "BEGIN(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}")
+	trace(tag_type, stack) do
+	  "<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
 	end
 	stack.pop if reader.empty_element?
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
 	path = stack.join('/')
-	ignore = false
 	case path
 	when 'feed/entry/title', 'rss/channel/item/title', 'rss/item/title',
 	    'rdf:RDF/item/title'
@@ -216,12 +222,9 @@ module RssSpeedReader
 	  libxml['time'] = reader.value
 	when %r{guid\Z}
 	  log(:info, "GUID: '#{reader.value}'.")
-	else
-	  ignore = true
 	end
-	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_values)
-	  log(:debug, "DATA(#{path}): '#{reader.value}'")
+	trace(tag_type, stack) do
+	  "  DATA(#{stack[-1]}): #{reader.value}"
 	end
       when XML::Reader::TYPE_END_ELEMENT
 	path = stack.join('/')
@@ -252,12 +255,10 @@ module RssSpeedReader
 
 	  yield libxml
 	end
-	stack.pop
-	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
-	    RssSpeedReader::TRACE.include?(:all_elements)
-	  path = stack.join('>')
-	  log(:debug, "END(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}")
+	trace(tag_type, stack) do
+	  "</#{stack[-1]}>"
 	end
+	stack.pop
       end
     end while reader.read
   end
