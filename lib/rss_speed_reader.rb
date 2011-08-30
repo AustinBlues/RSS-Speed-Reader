@@ -6,9 +6,9 @@ module RssSpeedReader
   class NewLocation < StandardError; end
   class NotRSS < StandardError; end
 
-  TRACE = [:essential_elements]
+#  TRACE = [:essential_elements]
 #  TRACE = [:all_elements]
-#  TRACE = []
+  TRACE = ['description']
 
 
   @@logger = nil
@@ -27,7 +27,7 @@ module RssSpeedReader
 
 
   def self.trace(tag_type, stack)
-    if tag_type != :all && !TRACE.include?(tag_type)
+    if !TRACE.include?(:all_elements) && !TRACE.include?(tag_type)
       false
     else
       indentation = '  ' * (stack.size-1)
@@ -46,9 +46,6 @@ module RssSpeedReader
       title, website_url, channel_base = RssSpeedReader.parse_header(reader, stack)
       channel_base ||= website_url
 
-#      trace(:essential_elements, stack) do
-#	"<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
-#      end
       stack.pop
 
       libxmls = []
@@ -66,6 +63,7 @@ module RssSpeedReader
     title = nil
     base = ''
     website_url = nil
+    trace_stack = []
 
     begin
       status = reader.read
@@ -101,11 +99,12 @@ module RssSpeedReader
 	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
 	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
 	  break		# end of header
-	when 'rss/channel'
+	when 'rss/channel', 'rss/channel/title'
+	  # essential_elements
 	else
 	  tag_type = reader.name
 	end
-	trace(tag_type, stack) do
+	trace_stack << trace(tag_type, stack) do
 	  "<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
 	end
 	stack.pop if reader.empty_element?
@@ -126,11 +125,11 @@ module RssSpeedReader
 	end
 	trace(tag_type, stack) do
 	  "  DATA(#{stack[-1]}): #{reader.value}"
-	end
+	end if trace_stack[-1]
       when XML::Reader::TYPE_END_ELEMENT
 	trace(tag_type, stack) do
 	  "</#{stack[-1]}>"
-	end
+	end if trace_stack.pop
 	stack.pop
       when XML::Reader::TYPE_DOCUMENT_TYPE
 	type = reader.name.strip
@@ -152,6 +151,8 @@ module RssSpeedReader
   def self.parse_body(reader, stack, channel_base)
     libxml = {}		# force scope
     links = []		# force scope
+    tmp = TRACE.include?(:all_elements) || TRACE.include?(:essential_elements)
+    trace_stack = [tmp] * stack.size
     begin	# post test loop
       case reader.node_type
       when XML::Reader::TYPE_ELEMENT
@@ -194,7 +195,7 @@ module RssSpeedReader
 	else
 	  tag_type = stack[-1]
 	end
-	trace(tag_type, stack) do
+	trace_stack << trace(tag_type, stack) do
 	  "<#{stack[-1]}#{reader.empty_element? ? ' /': ''}>"
 	end
 	stack.pop if reader.empty_element?
@@ -225,7 +226,7 @@ module RssSpeedReader
 	end
 	trace(tag_type, stack) do
 	  "  DATA(#{stack[-1]}): #{reader.value}"
-	end
+	end if trace_stack[-1]
       when XML::Reader::TYPE_END_ELEMENT
 	path = stack.join('/')
 	case path
@@ -255,9 +256,9 @@ module RssSpeedReader
 
 	  yield libxml
 	end
-	trace(tag_type, stack) do
+	trace(:all, stack) do
 	  "</#{stack[-1]}>"
-	end
+	end if trace_stack.pop
 	stack.pop
       end
     end while reader.read
