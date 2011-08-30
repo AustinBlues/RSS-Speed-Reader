@@ -5,11 +5,18 @@ require 'xml'
 require 'rss_speed_reader'
 
 
+class FakeLogger
+  def self.method_missing(method, *args)
+    puts args
+  end
+end
+
 class TestRss < Test::Unit::TestCase
   def setup
     # Disable noisy error reporting by libxml2 library on STDOUT
     XML::Error.set_handler(&XML::Error::QUIET_HANDLER)
 #    RssSpeedReader.set_logger(RAILS_DEFAULT_LOGGER)
+    RssSpeedReader.set_logger(FakeLogger)
   end
 
 

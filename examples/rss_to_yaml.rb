@@ -2,6 +2,14 @@ require 'rubygems'
 require '../lib/rss_speed_reader'
 require 'yaml'
 
+class FakeLogger
+  def self.method_missing(method, *args)
+    puts args
+  end
+end
+
+
+RssSpeedReader.set_logger(FakeLogger)
 
 reader = XML::Reader.io(STDIN)
 begin

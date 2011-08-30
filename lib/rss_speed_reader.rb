@@ -6,9 +6,9 @@ module RssSpeedReader
   class NewLocation < StandardError; end
   class NotRSS < StandardError; end
 
-  #TRACE = [:essential_elements]
-  #TRACE = [:all_elements]
-  TRACE = []
+  TRACE = [:essential_elements]
+#  TRACE = [:all_elements]
+#  TRACE = []
 
 
   @@logger = nil
@@ -86,7 +86,7 @@ module RssSpeedReader
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_elements)
-	  @@logger.debug "HEADER(#{path})" if @@logger
+	  @@logger.debug "BEGIN(#{path})" if @@logger
 	end
 	stack.pop if reader.empty_element?
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
@@ -109,10 +109,15 @@ module RssSpeedReader
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_values)
-	  @@logger.debug "HEADER(#{path}): #{reader.value}" if @@logger
+	  @@logger.debug "DATA(#{path}): #{reader.value}" if @@logger
 	end
       when XML::Reader::TYPE_END_ELEMENT
 	stack.pop
+	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
+	    RssSpeedReader::TRACE.include?(:all_elements)
+	  path = stack.join('>')
+	  @@logger.debug "END(#{path})" if @@logger
+	end
       when XML::Reader::TYPE_DOCUMENT_TYPE
 	type = reader.name.strip
 	raise NotRSS, type unless type =~ /\A(xml|rss|rdf:RDF)\z/i
@@ -210,7 +215,7 @@ module RssSpeedReader
 	end
 	if (RssSpeedReader::TRACE.include?(:essential_values) && !ignore) ||
 	    RssSpeedReader::TRACE.include?(:all_values)
-	  @@logger.debug "CDATA(#{path}): '#{reader.value}'" if @@logger
+	  @@logger.debug "DATA(#{path}): '#{reader.value}'" if @@logger
 	end
       when XML::Reader::TYPE_END_ELEMENT
 	path = stack.join('/')
@@ -242,6 +247,11 @@ module RssSpeedReader
 	  yield libxml
 	end
 	stack.pop
+	if (RssSpeedReader::TRACE.include?(:essential_elements) && !ignore) ||
+	    RssSpeedReader::TRACE.include?(:all_elements)
+	  path = stack.join('>')
+	  @@logger.debug "END(#{path}): #{(link && link.has_key?(:href)) ? link[:href] : ''}" if @@logger
+	end
       end
     end while reader.read
   end
