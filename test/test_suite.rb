@@ -39,9 +39,7 @@ class TestRss < Test::Unit::TestCase
   # Test exception thrown for non-RSS file (it's an HTML file, a
   # common user mistake).
   def test_not_rss
-    assert_raise RssSpeedReader::NotRSS do
-      reader = XML::Reader.io(open('./test/rss/html_page.html'), :options => XML::Parser::Options::RECOVER)
-      RssSpeedReader.parse(reader)
-    end
+    reader = XML::Reader.io(open('./test/rss/html_page.html'))
+    assert !RssSpeedReader.rss?(reader)
   end
 end

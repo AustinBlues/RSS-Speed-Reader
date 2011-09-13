@@ -21,6 +21,17 @@ module RssSpeedReader
   end
 
 
+  # Is source in reader in RSS format?
+  def self.rss?(reader)
+    parser_stack = []
+    parse_header(reader, parser_stack)
+  rescue NotRSS
+    false
+  else
+    true
+  end
+
+
   # Parse RSS, reading XML from +io+, returning hash with all RSS
   # feed relevant data.
   def self.parse(reader)
