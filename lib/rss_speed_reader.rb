@@ -138,16 +138,27 @@ module RssSpeedReader
 	stack << reader.name
 	path = stack.join('/')
 	case path
-	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
-	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
-	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
-	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link'
+#	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
+#	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
+#	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
+#	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link'
+	when %r{^feed/(entry/(link|a|url|href))|(atom\d*:entry/(atom\d\d:)?link)$}
 	  link = {}
 	  link[:href] = reader['href'].strip if reader['href']
 	  link[:type] = reader['type']
 	  link[:title] = reader['title']
 	  link[:rel] = reader['rel']
 	  links << link if reader.empty_element?
+#	when 'feed/entry', 'feed/atom10:entry', 'feed/atom03:entry', 'feed/atom:entry',
+#	    'rss/channel/item', 'rdf:RDF/item',
+#	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
+#	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
+	when %r{^(feed/(atom\d*:)?entry|(rss/channel/|rdf:RDF/|(rss11:)?items/)?(rss1\d:)?item|items/items|(atom\d*:)?entry)$}
+	  links = []
+	  libxml = {'description' => 'MISSING'}
+	  item_base = channel_base ? channel_base.dup : ''
+	  item_base << reader['xml:base'] if reader['xml:base']
+	  item_base << '/' unless item_base =~ %r{/\Z}
 	when 'rss/channel/item/enclosure'
 	  link = {}
 	  link[:href] = reader['url'].strip unless reader['url'].empty?
@@ -156,16 +167,6 @@ module RssSpeedReader
 	when 'rss/channel/item/description', 'feed/entry/summary'
 	  libxml['description'] =
 	    reader.empty_element? ? '' : reader.read_inner_xml
-	when 'feed/entry', 'feed/atom10:entry', 'feed/atom03:entry', 'feed/atom:entry',
-	    'rss/channel/item', 'rdf:RDF/item',
-	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
-	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
-	  links = []
-	  #	  log(:debug, "RESET LINKS.")
-	  libxml = {'description' => 'MISSING'}
-	  item_base = channel_base ? channel_base.dup : ''
-	  item_base << reader['xml:base'] if reader['xml:base']
-	  item_base << '/' unless item_base =~ %r{/\Z}
 	when 'feed'
 	  channel_base = $1 if reader['xml:base'] =~ %r{(.*/).*}
 	  channel_base << '/' unless channel_base =~ %r{/\Z}
@@ -175,8 +176,9 @@ module RssSpeedReader
       when XML::Reader::TYPE_TEXT, XML::Reader::TYPE_CDATA
 	path = stack.join('/')
 	case path
-	when 'feed/entry/title', 'rss/channel/item/title', 'rss/item/title',
-	    'rdf:RDF/item/title'
+#	when 'feed/entry/title', 'rss/channel/item/title', 'rss/item/title',
+#	    'rdf:RDF/item/title'
+	when %r{^(feed/entry|rss(/channel)?/item|rdf:RDF/item)/title$}
 	  libxml['title'] = reader.value
 	when 'feed/entry/content'
 	  libxml['description'] = reader.value if libxml['description'] == 'MISSING'
@@ -190,7 +192,8 @@ module RssSpeedReader
 	  links << link
 	when 'feed/entry/id', 'rss/channel/item/guid'
 	  libxml['ident'] = reader.value
-	when 'feed/entry/published', 'rss/channel/item/pubDate', 'rdf:RDF/item/dc:date'
+#	when 'feed/entry/published', 'rss/channel/item/pubDate', 'rdf:RDF/item/dc:date'
+	when %r{^(feed/entry/published|rss/channel/item/pubDate|rdf:RDF/item/dc:date)$}
 	  libxml['time'] ||= reader.value
 	when 'feed/entry/updated'
 	  libxml['time'] = reader.value
@@ -200,11 +203,12 @@ module RssSpeedReader
       when XML::Reader::TYPE_END_ELEMENT
 	path = stack.join('/')
 	case path
-	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
-	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
-	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
-	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link',
-	    'rss/channel/item/enclosure'
+#	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
+#	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
+#	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
+#	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link',
+#	    'rss/channel/item/enclosure'
+	when %r{^(feed/(atom\d*:)?entry/((atom\d*:)?link|a|url|href)|rss/channel/item/enclosure)$}
 	  links << link
 	when 'feed/entry', 'rss/channel/item', 'rdf:RDF/item'
 	  libxml['url'] = RssSpeedReader.resolve_links(links, item_base)
