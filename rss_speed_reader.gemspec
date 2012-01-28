@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Fast RSS parser}
   s.description = %q{Fast parsing of an RSS file using libxml-ruby wrapper around libxml2.}
-  s.add_dependency('libxml-ruby', '~> 1.1.0')
-#  s.add_development_dependency('test-unit')
+  s.add_dependency('libxml-ruby', '>= 1.1.0')
+#  s.add_dependency('libxml-ruby', '~> 2.2.2')
 
   s.rubyforge_project = "rss_speed_reader"
 
