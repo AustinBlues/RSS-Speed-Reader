@@ -134,34 +134,27 @@ module RssSpeedReader
 	stack << reader.name
 	path = stack.join('/')
 	case path
-#	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
-#	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
-#	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
-#	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link'
 #	when 'feed/entry', 'feed/atom10:entry', 'feed/atom03:entry', 'feed/atom:entry',
 #	    'rss/channel/item', 'rdf:RDF/item',
 #	    'rss10:item', 'rss11:items/rss11:item', 'rss11:items/item', 'items/rss11:item',
 #	    'items/items', 'item', 'atom10:entry', 'atom03:entry', 'atom:entry', 'entry'
-	when %r{^(?:feed/(?:atom\d*:)?(?:(e)ntry|e(n)try/(?:link|a|url|href))|(?:rss/channel/|rdf:RDF/|(?:rss11:)?items/)?(?:rss1\d:)?it(e)m|items/it(e)ms|(?:atom\d*:)?e(n)try)$}
-	  tag = $1 || $2 || $3 || $4 || $5
-#	  puts "TAG: '#{tag}' '#{path}'."
-	  case tag
-	  when 'e'
-	    links = []
-	    libxml = {}
-	    item_base = channel_base ? channel_base.dup : ''
-	    item_base << reader['xml:base'] if reader['xml:base']
-	    item_base << '/' unless item_base =~ %r{/\Z}
-	  when 'n'
-	    link = {}
-	    link[:href] = reader['href'].strip if reader['href']
-	    link[:type] = reader['type']
-	    link[:title] = reader['title']
-	    link[:rel] = reader['rel']
-	    links << link if reader.empty_element?
-	  else
-	    raise
-	  end
+	when %r{^(feed/(atom\d*:)?entry|(rss/channel/|rdf:RDF/|(rss11:)?items/)?(rss1\d:)?item|items/items|(atom\d*:)?entry)\z}
+	  links = []
+	  libxml = {}
+	  item_base = channel_base ? channel_base.dup : ''
+	  item_base << reader['xml:base'] if reader['xml:base']
+	  item_base << '/' unless item_base =~ %r{/\Z}
+#	when 'feed/entry/link', 'feed/entry/a', 'feed/entry/url', 'feed/entry/href',
+#	    'feed/atom:entry/link', 'feed/atom:entry/atom:link',
+#	    'feed/atom03:entry/link', 'feed/atom03:entry/atom03:link',
+#	    'feed/atom10:entry/link', 'feed/atom10:entry/atom10:link'
+	when %r{^(feed/(atom\d*:)?entry/((atom\d*:)?link|a|url|href))\z}
+	  link = {}
+	  link[:href] = reader['href'].strip if reader['href']
+	  link[:type] = reader['type']
+	  link[:title] = reader['title']
+	  link[:rel] = reader['rel']
+	  links << link if reader.empty_element?
 	when 'rss/channel/item/enclosure'
 	  link = {}
 	  link[:href] = reader['url'].strip unless reader['url'].empty?
