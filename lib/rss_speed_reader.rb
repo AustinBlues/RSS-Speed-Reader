@@ -78,13 +78,19 @@ module RssSpeedReader
 	path = stack.join('/')
 	case path
 	when %r{^(feed|rss|rss10|rss11|rdf:RDF|atom03|atom|atom10)\z}
-	  base = $1 if reader['xml:base'] =~ %r{(.*/).*}
-	  base << '/' unless base[-1] == ?/
+	  if reader['xml:base'] =~ %r{(.*/).*}
+	    base = $1 
+	    base << '/' unless base[-1] == ?/
+	  end
 	when 'feed/link'
 	  if reader['rel'] == 'alternate' && reader['type'] == 'text/html'
 	    website_url = reader['href'].strip if !reader['href'].nil? && !reader['href'].empty?
 	  elsif reader['type'] !~ /xml/ && reader['rel'] != 'replies'
-	    website_url = reader['href'] if website_url.nil?
+	    website_url ||= reader['href']
+	  elsif reader['rel'] == 'self' && reader['type'] =~ /xml/
+	    if reader['href'] =~ %r{https?://\w+(\.\w+)} && base.empty?
+	      base = "#{$&}/"
+	    end
 	  end
 	when %r{^(feed/entry|feed/atom:entry|feed/atom03:entry|feed/atom10:entry|feed/entry|feed/atom10:entry|feed/atom03:entry|feed/atom:entry|rss/channel/item|rdf:RDF/item|rss10:item|rss11:items/rss11:item|rss11:items/item|items/rss11:item|items/items|item|atom10:entry|atom03:entry|atom:entry|entry)\z}
 	  break		# end of header
@@ -100,7 +106,9 @@ module RssSpeedReader
 	when %r{^(rss/link|rss/channel/link|rdf:RDF/channel/link)\z}
 	  base = website_url = reader.value.strip
 	when 'feed/id'
-	  website_url = reader.value.strip if website_url.nil? || website_url.empty?
+	  if reader.value =~ %r{https?://\w+}
+	    website_url = reader.value.strip if website_url.nil? || website_url.empty?
+	  end
 	when 'redirect/newLocation'
 	  rss_url = reader.value.strip
 	  raise RssSpeedReader::NewLocation, rss_url
